@@ -1,0 +1,16 @@
+.idea
+*.class
+*.log
+project/target
+.bloop
+.bsp
+.metals
+.cache
+.history
+.lib/
+dist/*
+lib_managed/
+project/boot/
+project/plugins/project
+.env
+target/

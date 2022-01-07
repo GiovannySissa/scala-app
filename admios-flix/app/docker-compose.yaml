@@ -1,0 +1,21 @@
+version: '3.4'
+services:
+  redis:
+    container_name: 'redis'
+    image: 'redis:6.0.8'
+    network_mode: host
+  postgres:
+    container_name: 'postgres'
+    image: 'postgres:13.0'
+    network_mode: host
+    environment:
+      - POSTGRES_PASSWORD=mysecretpassword
+  admios_flix:
+    restart: always
+    image: admios-flix:1.0.0-SNAPSHOT
+    network_mode: host
+    environment:
+      - POSTGRES_URL=jdbc:postgresql://localhost:5432/postgres
+    depends_on:
+      - postgres
+      - redis

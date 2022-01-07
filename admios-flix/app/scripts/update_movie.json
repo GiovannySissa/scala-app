@@ -1,0 +1,10 @@
+{
+  "id": "8552cd64-3198-4260-989e-ad6830a17870",
+  "title": "Movie Title Updated",
+  "genre": "Action",
+  "releaseDate": "2021-11-09T15:07:19.629079Z",
+  "director": {
+    "id": "1ed08f08-aca1-43a0-bf64-74e206da48ad",
+    "name": "Steven Spielberg"
+  }
+}
